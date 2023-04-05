@@ -1,18 +1,58 @@
 [
-    { "personaje": "DarthVader", "precio": 379, "cantidad": 1,"id":1,
-"img":"./assets/images/DarthVader.jpg"},
-    { "personaje": "Goku", "precio": 550, "cantidad": 1,"id":2, 
-    "img": "./assets/images/cocun.jpg" },
-    { "personaje": "Batman", "precio": 399, "cantidad": 1,"id":3, 
-    "img": "./assets/images/batimovil.jfif" },
-    { "personaje": "Gai Sensei", "precio": 500, "cantidad": 1,"id":4,
-    "img":"./assets/images/gaisensei.jpg" },
-    { "personaje": "Superman", "precio": 520, "cantidad": 1,"id":5,
-"img": "./assets/images/superman.jpg" },
-{ "personaje": "Spiderman", "precio": 400, "cantidad": 1,"id":6,
-"img":"./assets/images/spiderman.jpg" },
-{ "personaje": "Messi", "precio": 450, "cantidad": 1,"id":7,
-"img":"./assets/images/messi.jpg" },
-{ "personaje": "Grogu", "precio": 370, "cantidad": 1,"id":8,
-"img":"./assets/images/grogu.jfif" }
+    {
+        "personaje": "DarthVader",
+        "precio": 379,
+        "cantidad": 1,
+        "id": 1,
+        "img": "./assets/images/DarthVader.jpg"
+    },
+    {
+        "personaje": "Goku",
+        "precio": 550,
+        "cantidad": 1,
+        "id": 2,
+        "img": "./assets/images/cocun.jpg"
+    },
+    {
+        "personaje": "Batman",
+        "precio": 399,
+        "cantidad": 1,
+        "id": 3,
+        "img": "./assets/images/batimovil.jfif"
+    },
+    {
+        "personaje": "Gai Sensei",
+        "precio": 500,
+        "cantidad": 1,
+        "id": 4,
+        "img": "./assets/images/gaisensei.jpg"
+    },
+    {
+        "personaje": "Superman",
+        "precio": 520,
+        "cantidad": 1,
+        "id": 5,
+        "img": "./assets/images/superman.jpg"
+    },
+    {
+        "personaje": "Spiderman",
+        "precio": 400,
+        "cantidad": 1,
+        "id": 6,
+        "img": "./assets/images/spiderman.jpg"
+    },
+    {
+        "personaje": "Messi",
+        "precio": 450,
+        "cantidad": 1,
+        "id": 7,
+        "img": "./assets/images/messi.jpg"
+    },
+    {
+        "personaje": "Grogu",
+        "precio": 370,
+        "cantidad": 1,
+        "id": 8,
+        "img": "./assets/images/grogu.jfif"
+    }
 ]

@@ -9,7 +9,6 @@ const pintarCarrito = () => {
 `;
     modalContainer.append(modalHeader);
     /*botón para cerrar la ventana del carrito*/
-
     const modalbutton = document.createElement("h1");
     modalbutton.innerText = "Cerrar[X]";
     modalbutton.className = "modalHeaderButton";
@@ -18,7 +17,6 @@ const pintarCarrito = () => {
     });
     /*se recorre el arreglo de productos para obtener las características*/
     modalHeader.append(modalbutton);
-
     carrito.forEach((producto) => {
         let carritoContent = document.createElement("div");
         carritoContent.className = "modalContent";
@@ -31,7 +29,6 @@ const pintarCarrito = () => {
 <span class= "sumar"> + </span>
 <p>Total:$ ${producto.cantidad * producto.precio}</p>
 <span class="borrarProducto"> ❌ </span>
-
 `;
         /*si el producto es más de 1, se puede restar, si es uno se deberá eliminar directamente con el botón correspondiente*/
         modalContainer.append(carritoContent);
@@ -39,21 +36,20 @@ const pintarCarrito = () => {
         restar.addEventListener("click", () => {
             if (producto.cantidad !== 1) {
                 producto.cantidad--;
-            Toastify({
-                text: "Eliminaste una unidad",
-                duration: 3000,
-                close: true,
-                gravity: "top",
-                position: "right",
-                stopOnFocus: true,
-                style: {
-                    background: "linear-gradient(to right, orange, aquamarine)",
-                },
-                onClick: function () { }, 
-            }).showToast();
-           
+                Toastify({
+                    text: "Eliminaste una unidad",
+                    duration: 3000,
+                    close: true,
+                    gravity: "top",
+                    position: "right",
+                    stopOnFocus: true,
+                    style: {
+                        background: "linear-gradient(to right, orange, aquamarine)",
+                    },
+                    onClick: function () { },
+                }).showToast();
             }
-            else{
+            else {
                 Toastify({
                     text: "Puedes quitar el producto en ❌",
                     duration: 3000,
@@ -64,7 +60,7 @@ const pintarCarrito = () => {
                     style: {
                         background: "linear-gradient(to right, orange, aquamarine)",
                     },
-                    onClick: function () { }, 
+                    onClick: function () { },
                 }).showToast();
             }
             saveLocal();
@@ -87,7 +83,6 @@ const pintarCarrito = () => {
                 onClick: function () { }, // Callback after click
             }).showToast();
             producto.cantidad++;
-
             saveLocal();
             pintarCarrito();
             carritoContador();
@@ -113,7 +108,6 @@ const pintarCarrito = () => {
     /*recorre el carrito multiplicando el precio*cantidad y sumando el resultado de los ítems existentes, dando un total global*/
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
     const totalCompra = document.createElement("div");
-
     totalCompra.className = "totalContent";
     /*si el carrito está vació te aparece el texto que lo indica*/
     if (total > 0) {
@@ -125,11 +119,9 @@ const pintarCarrito = () => {
         totalCompra.style.display = "flex";
         modalContainer.append(totalCompra);
     }
-
     const compraFinal = document.createElement("button");
     compraFinal.className = "compraFinal";
     compraFinal.innerText = "Comprar";
-
     /*desaparece el boton comprar si no hay productos en carrito*/
     if (total > 0) {
         modalContainer.append(compraFinal);
@@ -138,10 +130,7 @@ const pintarCarrito = () => {
     function mostrarTexto() {
         Swal.fire({
             title: "Comprar Carrito",
-            html: `¿Desea realizar esta compra de ${carrito.reduce(
-                (acc, producto) => acc + producto.cantidad,
-                0
-            )} productos por $${total}? `,
+            html: `¿Desea realizar esta compra de ${carrito.reduce((acc, producto) => acc + producto.cantidad, 0)} productos por $${total}? `,
             icon: "question",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
@@ -182,9 +171,7 @@ const eliminarProducto = (id) => {
 /*te cuenta la extensión del carrito para decirte la cantidad de productos, y se guarda localmente*/
 function carritoContador() {
     let numeroNuevo = carrito.reduce(
-        (acc, producto) => acc + producto.cantidad,
-        0
-    );
+        (acc, producto) => acc + producto.cantidad, 0);
     //cantidadCarrito.innerText= numeroNuevo;
     cantidadCarrito.style.display = "block";
     localStorage.setItem("numeroNuevo", JSON.stringify(numeroNuevo));

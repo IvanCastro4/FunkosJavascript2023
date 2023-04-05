@@ -13,7 +13,8 @@ main {
     height: 100vh;
 
 }
-.containerMain{
+
+.containerMain {
     background-color: aquamarine;
 }
 
@@ -44,9 +45,12 @@ nav {
     width: 100%;
     height: 100%;
 }
+
 .banner img {
     height: 250px;
-    width: 100vw; }
+    width: 100vw;
+}
+
 main {
     height: 100%;
 }
@@ -158,14 +162,15 @@ main {
     cursor: pointer;
 }
 
-.verCarrito{
+.verCarrito {
     cursor: pointer;
 }
 
-.imagenCarrito{
+.imagenCarrito {
     width: 50px;
     height: 50px;
 }
+
 .cantidadCarrito {
     background-color: red;
     color: antiquewhite;
@@ -177,41 +182,48 @@ main {
     display: none;
     cursor: pointer;
 }
-.sumar{
+
+.sumar {
     cursor: pointer;
 }
-.restar{
+
+.restar {
     cursor: pointer;
 }
-.compraFinal{
+
+.compraFinal {
     cursor: pointer;
     font-size: 25px;
     margin-bottom: 25px;
 }
-.pie-de-pagina{
-    background-color:rgb(156, 159, 170); 
+
+.pie-de-pagina {
+    background-color: rgb(156, 159, 170);
     text-decoration: none;
-    display:flex;
+    display: flex;
     width: 100%;
     height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     align-content: space-evenly;
     flex-wrap: wrap;
 }
-.pie-de-pagina ul{
+
+.pie-de-pagina ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
-.redes{
+
+.redes {
     font-weight: 700;
     font-size: 15px;
     justify-content: space-evenly;
 }
-.redes-sociales ul h2{
 
-    justify-content: space-evenly; 
+.redes-sociales ul h2 {
+
+    justify-content: space-evenly;
     display: flex;
-    list-style: none;  
+    list-style: none;
     margin-bottom: 10px;
 }
