@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="¡Aprovecha tu oportunidad! Compra con nosotros
+    Funkos de tus personajes favoritos a precios increibles y con las mejores ofertas.">
+    <meta name="author" content="Ivan Castro para CoderHouse">
+    <meta name="Copyright" content="FunkosGdl">
+    <title>Inicio | FunkosGdl</title>
+    <link rel="shortcut icon" href="./assets/images/corona.png" tyassetspe="image/x-icon" />
+    <!--llamado bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+        <!--librería tostify-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="stylesheet" href="./style.css" />
+    <meta property="og: title" content="Inicio">
+    <meta property="og: description" content="Página de inicio de FunkosGdl">
+    <meta property="og: image"
+        content="https://cdn.diariodeavisos.com/wp-content/uploads/2021/11/RS677656_sm-funko-02-scr.jpg">
+    <meta property="og: url" content="https://ivancastro4.github.io/proyecto-funkosgdl-2022/index.html">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/images/corona.png" alt="Logo de corona funko" width="30" height="24"
+                        class="d-inline-block align-text-top" />
+                    FunkosGdl
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="verCarrito" aria-current="page" id="verCarrito">🛒 <span id="cantidadCarrito"
+                                    class="cantidadCarrito"></span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar(SinFunción)" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            Buscar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--banner inicial-->
+        <div class="banner">
+            <img src="./assets/images/banner1.jpg" alt="banner con frase todo mundo es fan de algo" />
+        </div>
+    </header>
+    <main>
+        <!--productos-->
+        <div id="contenidoTienda" class="contenidoTienda"> </div>
+        <!--modalContainer-->
+        <div id="modalContainer" class="modalContainer"></div>
+    </main>
+    <!--footer-->
+    <footer class="pie-de-pagina">
+        <section class="redes-sociales">
+            <h2>Síguenos en nuestras redes</h2>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./assets/images/facebook.png"
+                            alt="logo de facebook" /></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/funkosgdl/" target="_blank"><img
+                            src="./assets/images/instagram.png" alt="logo de instagram" /></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img src="./assets/images/twitter.png"
+                            alt="logo de twitter" /></a>
+                </li>
+            </ul>
+        </section>
+        
+    </footer>
+    
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="preEntrega3.js"></script>
+    <script src="carrito.js"></script>
+
+</body>
+
+</html>

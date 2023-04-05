@@ -1,0 +1,213 @@
+.navBar li {
+    list-style: none;
+}
+
+.navBar li a {
+    color: rgb(11, 82, 225);
+    text-decoration: none;
+}
+
+main {
+    background-color: rgba(97, 156, 158, 0.608);
+    color: blue;
+    height: 100vh;
+
+}
+.containerMain{
+    background-color: aquamarine;
+}
+
+main fieldset {
+    width: 80%;
+    padding: 25px;
+}
+
+.mover {
+    margin-left: 45vw;
+
+}
+
+nav {
+    background-color: rgba(80, 168, 200, 0.601);
+
+}
+
+.nav-item {
+    color: blue;
+    font-size: 20px;
+
+}
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.banner img {
+    height: 250px;
+    width: 100vw; }
+main {
+    height: 100%;
+}
+
+/* cards de productos*/
+.contenidoTienda {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding: 15px;
+}
+
+.card {
+    box-shadow: 0 4px 8 px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.card img {
+    width: 85%;
+    height: 200px;
+}
+
+.price {
+    color: cornflowerblue;
+    font-size: 25px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 13px;
+    color: antiquewhite;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.8;
+}
+
+.modalContainer {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: aliceblue;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modalContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: antiquewhite;
+    width: 100%;
+}
+
+.modalHeaderTitulo {
+    justify-self: start;
+    color: antiquewhite;
+}
+
+.modalHeaderButton {
+    cursor: pointer;
+}
+
+.modalContainer>.modalContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modalContainer>div>img {
+    height: 120px;
+    width: 120px;
+}
+
+.totalContent {
+    font-size: 35px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+}
+
+.borrarProducto {
+    cursor: pointer;
+}
+
+.verCarrito{
+    cursor: pointer;
+}
+
+.cantidadCarrito {
+    background-color: red;
+    color: antiquewhite;
+    border-radius: 45%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+.sumar{
+    cursor: pointer;
+}
+.restar{
+    cursor: pointer;
+}
+.compraFinal{
+    cursor: pointer;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.pie-de-pagina{
+    background-color:rgb(156, 159, 170); 
+    text-decoration: none;
+    display:flex;
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+.pie-de-pagina ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.redes{
+    font-weight: 700;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+.redes-sociales ul h2{
+
+    justify-content: space-evenly; 
+    display: flex;
+    list-style: none;  
+    margin-bottom: 10px;
+}
