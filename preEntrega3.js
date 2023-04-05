@@ -40,7 +40,7 @@ productos.forEach((producto) => {
             position: "right",
             stopOnFocus: true,
             style: {
-            background: "linear-gradient(to right, #00b09b, aquamarine)",
+            background: "linear-gradient(to right, orange, aquamarine)",
             },
             onClick: function(){} // Callback after click
           }).showToast();
